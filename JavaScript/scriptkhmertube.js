@@ -1,0 +1,1 @@
+user.style.backgroundColor = "red";
