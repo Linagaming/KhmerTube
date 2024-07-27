@@ -39,8 +39,8 @@
 						<li><a><i class="bi bi-house-door-fill"></i></a></li>
 						<li><a><i class="bi bi-cloud-arrow-up-fill"></i></a></li>
 						<li><a><i class="bi bi-person-circle"></i></a></li>
-						<li onclick="changemode()"><a><i class="bi bi-moon-stars-fill"></i></a></li>
-						<li><a><i class="bi bi-list"></i></a></li>
+						<li><a><i class="bi bi-moon-stars-fill"></i></a></li>
+						<li onclick="myOpenmenu()"><a><i class="bi bi-list"></i></a></li>
 					</ul>
 				</div>
 			</div>
@@ -49,11 +49,47 @@
 	   
 
 
+<!---------------------------------- Start Menu Bar For Phone ----------------------------------->
+<div id="mymenuphone" class="container-fluid menubar-phone">
+	<div class="row">
+		<div class="box-menubar-phone">
+			<div class="logo">
+				<a href="index.html"><img src="icon/KhmerTube.png"></a>
+			</div>
+			<div class="close-menu">
+				<i onclick="myClosemenu()" class="fas fa-times"></i>
+			</div>
+        <ul id="textMode">
+           <a href="index.html"><li>Home</li></a>
+           <a href="index.html"><li>Contact</li></a>
+           <a href="index.html"><li>About KhmerTube</li></a>
+           <li onclick="myMode(); openAlert()">Mode <a><i class="bi bi-moon-stars-fill"></i></a></li>
+		</ul>
+		</div>
+	</div>    
+</div>
+
+<div id="myAlert" class="manager-alert">
+<div class="alert-done">
+	<span></span>
+	<i class="bi bi-check-circle-fill"></i>
+	<p id="changtext">បានប្តូរទៅ Dark Mode បានជោគជ័យ</p>
+</div>
+</div>
+
+
+
+
+<!---------------------------------- End Start Menu Bar For Phone ----------------------------------->
 
 
 
 
 
+
+
+
+<!----------------------------- Start Lgin Form ---------------------------->
 
 
 
@@ -91,7 +127,7 @@
 			</div>
 		</div>
 
-
+<!----------------------------- End Start Lgin Form ---------------------------->
 
 
 
@@ -116,7 +152,7 @@
                     </div>
 
 					<div class="box-ads opslide">
-						<a href="https://coolapp.chat/" target="_blank"><img src="image/CoolApp Banner 2.jpg" download></a>
+						<a href="https://t.me/lina_167" target="_blank"><img src="image/contact .jpg" download></a>
                         <!-- <p>សម្រាប់ផ្សព្វផ្សាយពាណិជ្ចកម្ម</p>
 						<p>ទំនាក់ទំនងតាមរយ</p>
 						<div class="contact">
