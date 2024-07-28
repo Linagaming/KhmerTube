@@ -1,1 +1,0 @@
-user.style.backgroundColor = "red";
