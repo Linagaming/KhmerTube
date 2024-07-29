@@ -95,3 +95,14 @@ function nightModeDesktop(){
   setTimeout(function(){ myAlert.style.display = "none";}, 4000);
 
 }
+
+let count = 0;
+
+document.getElementById('view').addEventListener('click', () => {
+    count++;
+    document.getElementById('countView').innerText = count;
+});
+
+function closelistreview(){
+  document.getElementById("listVideo").style.display = "none";
+}
