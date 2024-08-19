@@ -1,0 +1,557 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Khmer Tube</title>
+
+    <link rel="icon" href="icon/KhmerTube Logo.png">
+    
+    <!---------------------------------------------------------------- Icon --------------------------------------------------->
+    <link rel="stylesheet" href="icon/all.css">
+    <link rel="stylesheet" href="icon/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!---------------------------------------------------------------- Icon --------------------------------------------------->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="icon/all.min.css">
+	<link rel="stylesheet" href="css/Style.css">
+	<script src="Jquery/Jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/3efc0cc02a.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Suwannaphum:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="JavaScript/clck bar menu.js">
+</head>
+
+<body>
+	
+	<div class="container-fluid manager-navigettion" id="barmenu">
+		<div class="row">
+			<div class="box-navigettion col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<div class="logo-web col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+					<img src="icon/KhmerTube.png">
+					<p>CoolApp</p>
+				</div>
+				<div class="menu col-9 col-sm-9 col-md-10 col-lg-10 col-xl-10">
+					<ul>
+						<li><a href="index.html"><i class="bi bi-house-fill"></i></a></li>
+						<li><a><i class="bi bi-cloud-arrow-up-fill"></i></a></li>
+						<li><a><i class="bi bi-person-circle"></i></a></li>
+						<li onclick="nightModeDesktop()"><a><i class="bi bi-moon-stars-fill"></i></a></li>
+						<li onclick="myOpenmenu()"><a><i class="bi bi-list"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	   
+
+
+<!---------------------------------- Start Menu Bar For Phone ----------------------------------->
+<div id="mymenuphone" class="container-fluid menubar-phone">
+	<div class="row">
+		<div class="box-menubar-phone">
+			<div class="logo">
+				<a href="index.html"><img src="icon/KhmerTube.png"></a>
+			</div>
+			<div class="close-menu">
+				<i onclick="myClosemenu()" class="fas fa-times"></i>
+			</div>
+        <ul id="textMode">
+           <a href="index.html"><li>Home</li></a>
+		   <a href="#"><li>Login</li></a>
+		   <a href="index.html"><li>Create Account</li></a>
+           <a href="https://t.me/lina_167" target="_blank"><li onclick="myClosemenu()">Contact for Support</li></a>
+           <a href=""><li>About KhmerTube</li></a>
+           <li onclick="myMode(); openAlert()">Mode <a><i class="bi bi-moon-stars-fill"></i></a></li>
+		</ul>
+		</div>
+	</div>    
+</div>
+
+<div id="myAlert" class="manager-alert">
+<div class="alert-done">
+	<i class="bi bi-check-circle-fill"></i>
+	<p id="changtext">អ្នកប្តូរបានជោគជ័យ</p>
+</div>
+</div>
+
+
+
+
+
+<!---------------------------------- End Start Menu Bar For Phone ----------------------------------->
+
+
+
+
+
+
+
+
+<!----------------------------- Start Lgin Form ---------------------------->
+
+
+
+		<div class="form-login" id="user" >
+			<div class="box-login" method="post" id="forml">
+				<p>Login form</p>
+				<input class="login" type="email" placeholder="email">
+				<div class="your-email">
+					<p><i class="fas fa-envelope"></i>Please enter your email</p>
+				</div>
+				<input class="login" type="password" placeholder="password" maxlength="8">
+				<div class="your-email">
+					<p><i class="fas fa-key"></i>Please enter your password</p>
+				</div>
+				<div class="check-box">
+					<input type="checkbox"><p>Remeber me</p> 
+				</div>
+					<a href="index.html"><div class="btn-submit" id="closesubmit">LOGIN</div></a>
+				
+				<div class="login-with">
+					<a href="https://www.facebook.com/login.php" target="_blank"><div class="login-fb"><i class="fa fa-facebook"></i>Facebook</div></a>
+					<a href="https://accounts.google.com/" target="_blank"><div class="login-google"><i class="fa fa-google"></i>Google</div></a>
+				</div>
+				<div class="forget">
+					<a href="https://accounts.google.com"><p>Forget Password</p></a>
+				</div>
+				<div class="copyright">
+					<h1>Copyright © all by <a href="index.html" target="_blank">Khmer Tube</a></h1>
+				    <h1>Developered By <a href="https://t.me/lina_167" style="color: rgb(251, 147, 147);">VOEURN LINA</a></h1>
+				    <h1>Thanks You!</h1>
+				</div>
+				
+				<div class="img-me">
+				</div>
+			</div>
+		</div>
+
+<!----------------------------- End Start Lgin Form ---------------------------->
+
+
+
+
+
+<!----------------------------------------------------------- Manager ADS------------------------------------------------------------- -->
+
+
+		<div class="container-fluid container-ads">
+			<div class="row">
+                    <div class="box-ads opslide">
+						<a href="https://coolapp.chat/" target="_blank"><img src="image/CoolApp Banner.jpg"></a>
+                        <!-- <p>សម្រាប់ផ្សព្វផ្សាយពាណិជ្ចកម្ម</p>
+						<p>ទំនាក់ទំនងតាមរយ</p>
+						<div class="contact">
+							<a href="https://t.me/lina_167" target="_blank"><i class="bi bi-telegram"></i></a>
+							<a href="https://web.facebook.com/iloveyoulyna168/" target="_blank"><i class="bi bi-facebook"></i></a>
+							<a href="https://www.youtube.com/@linagamming5669" target="_blank"><i class="bi bi-youtube"></i></a>
+							<a href="#"><i class="bi bi-twitter"></i></a>
+							<a href="#"><i class="bi bi-instagram"></i></a>
+						</div> -->
+                    </div>
+
+					<div class="box-ads opslide">
+						<a href="https://t.me/lina_167" target="_blank"><img src="image/contact .jpg" download></a>
+                        <!-- <p>សម្រាប់ផ្សព្វផ្សាយពាណិជ្ចកម្ម</p>
+						<p>ទំនាក់ទំនងតាមរយ</p>
+						<div class="contact">
+							<a href="https://t.me/lina_167" target="_blank"><i class="bi bi-telegram"></i></a>
+							<a href="https://web.facebook.com/iloveyoulyna168/" target="_blank"><i class="bi bi-facebook"></i></a>
+							<a href="https://www.youtube.com/@linagamming5669" target="_blank"><i class="bi bi-youtube"></i></a>
+							<a href="#"><i class="bi bi-twitter"></i></a>
+							<a href="#"><i class="bi bi-instagram"></i></a>
+						</div> -->
+                    </div>
+			</div>
+			
+		</div>
+
+
+
+<!----------------------------------------------------------- Manager ADS------------------------------------------------------------- -->
+
+
+
+
+	
+	<!-- -----------------------------------------container manager-post-video ---------------------------------------->
+	 
+	<div class="container-fluid manager-post-video" id="screen">
+			
+			
+		   <div class="row">
+
+			<!-- <div id="list" class="list-for-video col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<div class="box-list-for-video">
+					<div class="next-left">
+						<i class="bi bi-arrow-left-circle-fill"></i>
+					</div>
+					<div class="manager-list">
+					    <div class="list">
+						<p>វីដេអូថ្មីៗ</p>
+					    </div>
+					    <div class="list">
+						<p>ព័ត៌មានក្នុងស្រុក</p>
+					    </div>
+					    <div class="list">
+						<p>ចម្រៀង</p>
+					    </div>
+					    <div class="list">
+						<p>កំប្លែង</p>
+					    </div>
+					    <div class="list">
+						<p>សម្រាយរឿង</p>
+					    </div>
+					    <div class="list">
+						<p>ចម្រុះ</p>
+					    </div>
+					    <div class="list">
+						<p>ធម្មតា</p>
+				  	    </div>
+				   </div>
+				   <div class="next-right">
+					<i class="bi bi-arrow-right-circle-fill"></i>
+				   </div>
+				</div>
+			</div> -->
+
+	
+			<div id="view" class="box-post col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3"> 
+				<div class="box-video">
+					<a href="ផ្កាយបុណ្យភូមិនៅតែរះ .html">
+						<div class="thumbnail-video">
+						<img src="Thumbnail/ផ្កាយបុណ្យភូមិនៅតែរះ.jpg">
+						<div class="play-video">
+						   <span><i class="bi bi-play-fill"></i></span>
+						</div>
+						<div class="time-video">
+							<p>6:44</p>
+						</div>
+					</div></a>
+					<div class="profile-title-video">
+						<div class="profile">
+							<img src="img/SmallWorld SmallBand ក្រុមតូច.jpg">
+						</div>
+						<div class="title-video">
+							<div class="title">
+								<p>SWSB ក្រុមតូច - ផ្កាយបុណ្យភូមិនៅតែរះ BonnPhum Star still rises ft. ចំរើន សុភា (Official Music Video)</p>
+							</div>
+							<div class="name-user-date">
+								<p><a href="#" target="_blank">SmallWorld SmallBand ក្រុមតូច <i class="bi bi-music-note"></i></a>
+								<p>ចំនួនមើល 721 ពាន់&nbsp;4 ឆ្នាំមុន</p>
+							</div>
+						</div>
+						<div class="menu-video-thumbnail">
+							<i class="bi bi-three-dots-vertical open-list"></i>
+						</div>
+					</div>
+				</div>
+		    </div>
+
+			<div class="box-post col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3"> 
+				<div class="box-video">
+					<a href="ត្រឹមអ្នកស្គាល់គ្នា  ឈីន រតនៈ.html"><div class="thumbnail-video">
+						<img src="Thumbnail/ត្រឹមអ្នកស្គាល់គ្នា ឈីន រតន ម្តាយ២ OST RHM.jpg">
+						<div class="play-video">
+							<span><i class="bi bi-play-fill"></i></span>
+						</div>
+						<div class="time-video">
+							<p>4:19</p>
+						</div>
+					</div></a>
+					<div class="profile-title-video">
+						<div class="profile">
+							<img src="img/Rasmey Hang Meas.jpg">
+						</div>
+						<div class="title-video">
+							<div class="title">
+								<p>ត្រឹមអ្នកស្គាល់គ្នា | ឈីន រតនៈ | ម្តាយ២ OST | RHM</p>
+							</div>
+							<div class="name-user-date">
+								<p><a href="#">Rasmey Hang Meas <i class="bi bi-check-circle-fill"></i></a>
+								<p>ចំនួនមើល 17លាន&nbsp;3 ឆ្នាំមុន</p>
+							</div>
+						</div>
+						<div class="menu-video-thumbnail">
+							<i class="bi bi-three-dots-vertical open-list"></i>
+						</div>
+					</div>
+				</div>
+		    </div>
+
+			<div class="box-post col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3"> 
+				<div class="box-video">
+					<div class="thumbnail-video">
+						<img src="Thumbnail/កម្លោះស្រុកខ្មែរ.jpg">
+						<div class="play-video">
+							<span><i class="bi bi-play-fill"></i></span>
+						</div>
+						<div class="time-video">
+							<p>3:31</p>
+						</div>
+					</div>
+					<div class="profile-title-video">
+						<div class="profile">
+							<img src="img/Vanthan - វណ្ណថាន Official.jpg">
+						</div>
+						<div class="title-video">
+							<div class="title">
+								<p>Vanthan x VannDa - កម្លោះស្រុកខ្មែរ (Khmer Gentlemen) [Official Video]</p>
+							</div>
+							<div class="name-user-date">
+								<p><a href="#">Vanthan - វណ្ណថាន Official <i class="bi bi-music-note"></i></a></p>
+								<p>ចំនួនមើល 95 លាន&nbsp;1 ឆ្នាំមុន</p>
+							</div>
+						</div>
+						<div class="menu-video-thumbnail">
+							<i onclick="myFunction()" class="bi bi-three-dots-vertical"></i>
+						</div>
+					</div>
+				</div>
+		    </div>
+
+			<div class="box-post col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3"> 
+				<div class="box-video">
+					<div class="thumbnail-video">
+						<img src="Thumbnail/Samsung ចាប់ដៃជាមួយ Google ញាត់បញ្ចូល AI ពេញទំហឹងចូលក្នុងទូរស័ព្ទបត់ស៊េរីថ្មី.jpg">
+						<div class="play-video">
+							<span><i class="bi bi-play-fill"></i></span>
+						</div>
+						<div class="time-video">
+							<p>4:22</p>
+						</div>
+					</div>
+					<div class="profile-title-video">
+						<div class="profile">
+							<img src="img/Technology Cambodia profile.jpg">
+						</div>
+						<div class="title-video">
+							<div class="title">
+								<p>Samsung ចាប់ដៃជាមួយ Google ញាត់បញ្ចូល AI ពេញទំហឹងចូលក្នុងទូរស័ព្ទបត់ស៊េរីថ្មី</p>
+							</div>
+							<div class="name-user-date">
+								<p><a href="#">Technology Cambodia</a>
+								<p>ចំនួនមើល 179&nbsp;9 ថ្ងៃមុន</p>
+							</div>
+						</div>
+						<div class="menu-video-thumbnail">
+							<i onclick="myFunction()" class="bi bi-three-dots-vertical"></i>
+						</div>
+					</div>
+				</div>
+		    </div>
+
+			
+
+			<!-- -------------------------------------------Review Video --------------------------------------------- -->
+
+			<div id="listreview" class="review-video col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<div class="title-review">
+					<div class="box-profile-title-revew col-12 col-sm-10 col-md-10 col-lg-11 col-xl-11">
+						<div class="profile">
+							<img src="img/John Sey profile.jpg">
+						</div>
+						<div class="title">
+							<p>ការណែនាំវីដេអូល្អបំផុតសម្រាប់អ្នក</p>
+						</div>
+						<div class="show-thumbnail">
+							<div class="box-show-thumbnail">
+									<li><a href="#"><i class="bi bi-facebook"></i></a></li>
+									<li><a href="#"><i class="bi bi-telegram"></i></a></li>
+									<li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
+									<li><a href="#"><i class="bi bi-youtube"></i></a></li>
+							</div>
+							
+						</div>
+						
+					</div>
+					<div class="list col-12 col-sm-2 col-md-2 col-lg-1 col-xl-1">
+						<i onclick="myList()" class="bi bi-three-dots"></i>
+					</div>
+
+					<div id="listVideo" onmouseleave="closelistreview()" class="list-menu-review col-10 col-sm-6 col-md-5 col-lg-5 col-xl-3">
+						<div onclick="listremove()" class="list-box">
+							<div class="icon">
+								<i class="bi bi-box-arrow-up-right"></i>
+							</div>
+							<div class="title">
+								<p>ទំនាក់ទំនងទៅ John Sey</p>
+							</div>
+						</div>
+
+						<div onclick="listremove(); brows()" class="list-box">
+							<div class="icon">
+								<i class="bi bi-eye"></i>
+							</div>
+							<div class="title">
+								<p>ចូលមើលឆានែល</p>
+							</div>
+						</div>
+
+						<div onclick="notlink()" class="list-box">
+							<div class="icon">
+								<i class="bi bi-ban"></i>
+							</div>
+							<div class="title">
+								<p id="changecolortwo">មិនចាប់អារម្មណ៍</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="reviewclose" class="row">
+
+			<div id="view" class="box-post col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3"> 
+				<div class="box-video">
+					<div class="thumbnail-video">
+						<img src="Thumbnail/Samsung Galaxy Z Fold 4 Review បន្ទាប់ពីបត់បើកអេក្រង់ ១ ខែរបស់ខ្ញុំ.jpg">
+						<div class="play-video">
+							<span><i class="bi bi-play-fill"></i></span>
+						</div>
+						<div class="time-video">
+							<p>9:49</p>
+						</div>
+					</div>
+					<div class="profile-title-video">
+						<div class="profile">
+							<img src="img/John Sey profile.jpg">
+						</div>
+						<div class="title-video">
+							<div class="title">
+								<p>Samsung Galaxy Z Fold 4 Review: បន្ទាប់​ ពីបត់បើកអេក្រង់ ១ ខែរបស់ខ្ញុំ!</p>
+							</div>
+							<div class="name-user-date">
+								<p><a href="#">John Sey <i class="bi bi-check-circle-fill"></i></a>
+								<p id="countView">0</p>
+							</div>
+						</div>
+						<div class="menu-video-thumbnail">
+							<i onclick="myFunction()" class="bi bi-three-dots-vertical"></i>
+						</div>
+					</div>
+				</div>
+		    </div>
+
+			<div class="box-post col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3"> 
+				<div class="box-video">
+					<div class="thumbnail-video">
+						<img src="Thumbnail/iPad Pro M4 Review លើកនេះវាខ្លាំង..អាចជំនួស Macbook បាន.jpg">
+						<div class="play-video">
+							<span><i class="bi bi-play-fill"></i></span>
+						</div>
+						<div class="time-video">
+							<p>10:49</p>
+						</div>
+					</div>
+					<div class="profile-title-video">
+						<div class="profile">
+							<img src="img/John Sey profile.jpg">
+						</div>
+						<div class="title-video">
+							<div class="title">
+								<p>iPad Pro M4 Review: លើកនេះវាខ្លាំង..អាចជំនួស Macbook បាន?</p>
+							</div>
+							<div class="name-user-date">
+								<p><a href="#">John Sey <i class="bi bi-check-circle-fill"></i></a>
+								<p>ចំនួនមើល 50 ពាន់&nbsp;3 សប្ដាហ៍មុន</p>
+							</div>
+						</div>
+						<div class="menu-video-thumbnail">
+							<i onclick="myFunction()" class="bi bi-three-dots-vertical"></i>
+						</div>
+					</div>
+				</div>
+		    </div>
+
+			<div class="box-post col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3"> 
+				<div class="box-video">
+					<div class="thumbnail-video">
+						<img src="Thumbnail/ខ្ញុំមិនដែលជួបនាឡិកា 69$ ណាធ្វើបានបែបនេះទេ HeyPlus GTR.jpg">
+						<div class="play-video">
+							<span><i class="bi bi-play-fill"></i></span>
+						</div>
+						<div class="time-video">
+							<p>7:21</p>
+						</div>
+					</div>
+					<div class="profile-title-video">
+						<div class="profile">
+							<img src="img/John Sey profile.jpg">
+						</div>
+						<div class="title-video">
+							<div class="title">
+								<p>ខ្ញុំមិនដែលជួបនាឡិកា 69$ ណាធ្វើបានបែបនេះទេ: HeyPlus GTR</p>
+							</div>
+							<div class="name-user-date">
+								<p><a href="#">John Sey <i class="bi bi-check-circle-fill"></i></a>
+								<p>ចំនួនមើល 27 ពាន់&nbsp;3 ខែមុន</p>
+							</div>
+						</div>
+						<div class="menu-video-thumbnail">
+							<i onclick="myFunction()" class="bi bi-three-dots-vertical"></i>
+						</div>
+					</div>
+				</div>
+		    </div>
+
+			<div class="box-post col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3"> 
+				<div class="box-video">
+					<div class="thumbnail-video">
+						<img src="Thumbnail/Huawei MatePad Pro 13.2 Review វាអាចជំនួស Laptop បាន!.jpg">
+						<div class="play-video">
+							<span><i class="bi bi-play-fill"></i></span>
+						</div>
+						<div class="time-video">
+							<p>11:10</p>
+						</div>
+					</div>
+					<div class="profile-title-video">
+						<div class="profile">
+							<img src="img/John Sey profile.jpg">
+						</div>
+						<div class="title-video">
+							<div class="title">
+								<p>Huawei MatePad Pro 13.2 Review: វាអាចជំនួស Laptop បាន!?</p>
+							</div>
+							<div class="name-user-date">
+								<p><a href="#">John Sey <i class="bi bi-check-circle-fill"></i></a>
+								<p>ចំនួនមើល 63 ពាន់&nbsp;3 ខែមុន</p>
+							</div>
+						</div>
+						<div class="menu-video-thumbnail">
+							<i onclick="myFunction()" class="bi bi-three-dots-vertical"></i>
+						</div>
+					</div>
+				</div>
+		    </div>
+		</div>
+
+
+			
+		    </div>
+
+			
+
+
+
+		</div>
+   </div>
+   
+   <!---------------------------------------------- End Manager Post Video ------------------------------------------>
+   
+   <!-------------------------------------------------- Start Javascript -------------------------------------------->
+			
+
+   <script src="JavaScript/scriptkhtube.js"></script>
+	
+			
+   <!------------------------------------------------ End Start Javascript ------------------------------------------>
+			
+			
+</body>
+</html>
+	
