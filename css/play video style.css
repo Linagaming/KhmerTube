@@ -359,11 +359,13 @@ div{
     box-sizing: border-box;
     float: left;
     /* background-color: aqua; */
+    width: 100%;
 }
 .box-desscription p{
     white-space: pre-wrap;
     /* color: #fc0d0d; */
     margin: 0;
+    /* margin-left: -175px; */
     -webkit-line-clamp: 3;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -371,6 +373,7 @@ div{
     overflow: hidden;
     margin-bottom: 0;
     line-height: 1.7;
+    padding: 0;
 }
 .box-video-right .box-profile{
     box-sizing: border-box;
@@ -665,9 +668,19 @@ div{
     .box-video-right .box-title-video-right p:nth-child(1){
         font-size: 15px;
     }
+    .count-comment-and-list{
+        /* background-color: #ff0000; */
+        padding-left: 20px;
+        margin: 0;
+    }
  }
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) and (min-width: 385.98px){
+    .count-comment-and-list{
+        /* background-color: #ff0000; */
+        padding-left: 20px;
+        margin: 0;
+    }
     .box-video-right .box-title-video-right p:nth-child(1){
         font-size: 15px;
     }
