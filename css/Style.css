@@ -9,6 +9,11 @@
 	--error: #e41749;
 	--dark: #151a30;
 }
+body.no-scroll {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
 
 body{
 	margin: 0;
@@ -1011,9 +1016,155 @@ h1,h2,h3,h4,h5,h6,a,ul{
 
 
 
-
-
-
+/* ------------------ Manage Form Login -----------------*/
+.manage-login-and-register{
+	background-color: rgba(0, 0, 0, 0.503);
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	display: none;
+	/* display: flex; */
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	position: fixed;
+}
+.manage-box-login-center{
+	/* background-color: #0676ed; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* overflow: hidden; */
+	margin-top: 140px;
+}
+.box-login-and-register{
+	background-color: #ffffff;
+	width: 500px;
+	height: 530px;
+	padding: 10px 25px;
+	border-radius: 6px;
+	transition: 0.2s;
+}
+.box-login-and-register:hover{
+	transform: translate(0px, -10px);
+}
+.box-login-and-register p{
+	text-align: center;
+	font-size: 30px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 600;
+	color: #4f4f4f;
+	margin-top: 10px;
+}
+.box-login-and-register .input-login{
+	/* background-color: blue; */
+	overflow: hidden;
+	text-align: center;
+}
+.box-login-and-register .input-login input{
+    width: 100%;
+	outline: none;
+	padding-left: 10px;
+	color: #404040;
+	margin-top: 15px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border: #a0a0a085 2px solid;
+	border-radius: 6px;
+}
+.box-login-and-register .input-login input::placeholder{
+	color: #a5a5a5;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 14px;
+}
+.box-login-and-register .input-login p{
+	font-size: 15px;
+	color: #429eff;
+	font-weight: 500;
+}
+.box-login-and-register .button-login{
+	background-color: #246aff;
+	text-align: center;
+	padding: 13px 0px;
+	font-size: 16px;
+	border-radius: 6px;
+	cursor: pointer;
+}
+.box-login-and-register .button-login span{
+	color: #ffffff;
+}
+.box-login-and-register .text-dont-account p{
+	font-size: 15px;
+	font-weight: 500;
+	font-style: normal;
+	color: #4d4d4d;
+}
+.box-login-and-register .text-dont-account p a{
+	color: #0676ed;
+}
+.text-dont-account p:nth-child(2){
+	position: relative;
+	height: 1.8px;
+	width: 100%;
+	margin-top: 25px;
+	margin-bottom: 30px;
+	background-color: #b8b7b78d;
+}
+.text-dont-account p:nth-child(2)::after{
+	content: "Or";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #ffffff;
+	padding: 0px 15px;
+	color: #878787;
+	font-weight: 500;
+	font-size: 18px;
+}
+.box-login-and-register .box-login-with{
+	text-align: center;
+}
+.box-login-and-register .login-with{
+	padding: 0px 20px;
+	margin-bottom: 15px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	border-radius: 6px;
+	cursor: pointer;
+}
+.box-login-and-register .login-with:nth-child(1){
+	background-color: #4267b2;
+	color: #ffffff;
+}
+.box-login-and-register .login-with:nth-child(2){
+	background-color: #ffffff;
+	color: #2d2d2d;
+	border: #c1c0c0a5 2px solid;
+}
+.box-login-and-register .login-with i{
+	font-size: 28px;
+	position: absolute;
+	left: 20px;
+}
+.box-login-and-register .login-with i img{
+	width: 28px;
+}
+.box-login-and-register .login-with p{
+	font-size: 16px;
+	padding: 13px 0px;
+	margin: 0;
+	color: #ffffff;
+	font-style: normal;
+	font-weight: 500;
+}
+.box-login-and-register .login-with:nth-child(2) p{
+	color: #363636;
+}
 
 
 
@@ -1130,9 +1281,17 @@ h1,h2,h3,h4,h5,h6,a,ul{
 	.profile-title-video .profile{
 		width: 20%;
 	}
+	.box-login-and-register{
+		/* background-color: #ff0000; */
+		width: 400px;
+	}
 }
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px){
+	.box-login-and-register{
+		/* background-color: #ff0000; */
+		width: 350px;
+	}
 	.name-user-date p{
 		font-size: 13px;
 	}
@@ -1208,6 +1367,11 @@ h1,h2,h3,h4,h5,h6,a,ul{
 
 /* -------------------------------------------- Col small devices 450px ---------------------------------------------- */
 @media (max-width: 465.98px) and (max-width: 515.98px) {
+	.box-login-and-register{
+		/* background-color: #ff0000; */
+		width: 300px;
+		padding: 10px 15px;
+	}
 	.form-login .box-login{
 		width: 90%;
 	}
@@ -1261,6 +1425,22 @@ h1,h2,h3,h4,h5,h6,a,ul{
 	}
 }
 @media (max-width: 405.98px) and (max-width: 413.98px) {
+	.box-login-and-register{
+		/* background-color: #ff0000; */
+		width: 250px;
+		padding: 10px 15px;
+	}
+	.box-login-and-register .login-with i{
+		font-size: 20px;
+		position: absolute;
+		left: 18px;
+	}
+	.box-login-and-register .login-with i img{
+		width: 23px;
+	}
+	.box-login-and-register .login-with p{
+		font-size: 13px;
+	}
 	.profile-title-video .profile{
 		width: 18%;
 	}
