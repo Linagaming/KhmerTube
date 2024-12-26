@@ -38,7 +38,7 @@
 					<ul>
 						<li><a href="index.html"><i class="bi bi-house-fill"></i></a></li>
 						<li><a><i class="bi bi-cloud-arrow-up-fill"></i></a></li>
-						<li><a><i class="bi bi-person-circle"></i></a></li>
+						<li onclick="openLogin()"><a><i class="bi bi-person-circle"></i></a></li>
 						<li onclick="nightModeDesktop()"><a><i class="bi bi-moon-stars-fill"></i></a></li>
 						<li onclick="myOpenmenu()"><a><i class="bi bi-list"></i></a></li>
 					</ul>
@@ -659,16 +659,57 @@
 
 	</div>
 </div>
-
-
 </div>
    
    <!---------------------------------------------- End Manager Post Video ------------------------------------------>
+
+
+
+
+   <div id="login_form" class="manage-login-and-register col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+	<div class="container manage-box-login-center">
+		<div class="row">
+			<div id="noneblock" class="box-login-and-register col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<p>Login</p>
+				<div class="input-login ">
+				    <input type="email" placeholder="Email" name="textemail"><br>
+				    <input type="password" placeholder="Password"><br>
+				    <p><a href="#">Forgot Password?</a></p>
+			    </div>
+				<div class="button-login" name="btnlogin">
+					<span>Login</span>
+				</div>
+				<div class="text-dont-account">
+					<p>Don't have an account? <a href="#">Sign up</a></p>
+					<p></p>
+				</div>
+				<div class="box-login-with">
+				<div class="login-with">
+					<i class="bi bi-facebook"></i>
+					<p>Login with Facebook</p>
+				</div>
+				<div class="login-with">
+					<i><img src="icon/Google Logo.png"></i>
+					<p>Login with Google</p>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
    
    <!-------------------------------------------------- Start Javascript -------------------------------------------->
 			
 
    <script src="JavaScript/scriptkhtube.js"></script>
+   <script src="JavaScript/open login from.js"></script>
 	
 			
    <!------------------------------------------------ End Start Javascript ------------------------------------------>
