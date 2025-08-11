@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body {
+  background: #181818;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.upload-container {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.upload-card {
+  background: #212121;
+  padding: 40px;
+  border-radius: 12px;
+  border: 2px dashed #3e3e3e;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-card:hover {
+  border-color: #3ea6ff;
+  box-shadow: 0 0 20px rgba(62,166,255,0.3);
+}
+
+.upload-icon {
+  font-size: 50px;
+  background: #3ea6ff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-card h3 {
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.upload-card p {
+  color: #aaa;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.upload-card button {
+  background: #3ea6ff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.video-preview video {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #303030;
+  color: #fff;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.progress-container {
+  background: #444;
+  height: 8px;
+  border-radius: 4px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background: #3ea6ff;
+  height: 100%;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+.publish-btn {
+  background: #3ea6ff;
+  border: none;
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #fff;
+}
