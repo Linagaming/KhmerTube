@@ -432,7 +432,7 @@ h1,h2,h3,h4,h5,h6,a,ul{
 /* ---------------------------------- Start Manage List Category ----------------------------*/
 
 .list-caegory-video{
-	background-color: #0f0f0f;
+	/* background-color: #ff0000; */
 	padding: 0px 6px 0px 6px;
 	margin: 0;
 	position: fixed;
@@ -532,6 +532,8 @@ h1,h2,h3,h4,h5,h6,a,ul{
 	padding-top: 0;
 	padding-bottom: 0;
 	padding-right: 20px;
+	overflow: hidden;
+	box-sizing: border-box;
 }
 .container .row{
 	margin: 0;
@@ -1543,9 +1545,17 @@ h1,h2,h3,h4,h5,h6,a,ul{
 	.manage-right-navbar{
 		display: none;
 	}
+	.list-caegory-video{
+		/* background-color: #f81e1e; */
+		width: 86.48%;
+	}
 }
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px){
+	.list-caegory-video{
+		/* background-color: #f81e1e; */
+		width: 90.40%;
+	}
 	.manager-navigettion{
 		padding: 0px 18px 0px 18px;
 		margin: 0;
