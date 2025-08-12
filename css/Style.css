@@ -454,9 +454,9 @@ ul {
   /* height: 50px; */
   user-select: none;
   /* backdrop-filter: blur(20px); */
-  background: rgba(47, 0, 94, 0.888);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.632);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   /* border: 2px solid rgba(255, 255, 255, 0.2); */
   /* box-shadow: 0 12px 48px rgb(25, 0, 64); */
   /* background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.909), transparent 50%); */
@@ -526,7 +526,7 @@ ul {
   /* background-color: #e41749; */
   width: 100%;
   float: left;
-  padding: 60px 0px 0px 0px;
+  padding: 80px 0px 0px 0px;
 }
 
 /* ---------------------------------- End Manage Sub video ----------------------------*/
