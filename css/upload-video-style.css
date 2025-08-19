@@ -1,0 +1,433 @@
+body {
+  background: #0f0f0f;
+  white-space: nowrap;
+  white-space: inherit;
+}
+.manage-upload-video {
+  /* background-color: #ff6767; */
+  padding-top: 67px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 0;
+  height: 100vh;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.box-manage-upload-video {
+  /* background-color: blue; */
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  display: flex;
+}
+.profile-dashboard {
+  width: 240px;
+  height: 100vh;
+  /* background-color: #212121; */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  position: relative;
+  border-right: 1px solid #202020;
+}
+.profile-dashboard .box-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.profile-dashboard .box-profile .box-image-profile img {
+  width: 120px;
+  border-radius: 100px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.profile-dashboard .box-profile .box-image-profile {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Roboto Light";
+}
+.profile-dashboard .box-profile .box-image-profile p {
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  font-weight: 600;
+}
+.profile-dashboard .box-profile .box-image-profile span {
+  font-size: 13px;
+  color: #999999;
+}
+
+.profile-dashboard .box-list-menu-dashboard {
+  flex-grow: 1;
+  overflow-y: auto;
+  max-height: calc(100vh - 200px);
+  padding: 0px 10px 0px 20px;
+}
+.profile-dashboard .box-list-menu-dashboard::-webkit-scrollbar-thumb {
+  background-color: #606060;
+  border-radius: 100000000px;
+}
+.profile-dashboard .box-list-menu-dashboard::-webkit-scrollbar {
+  height: 0px;
+  background-color: #282828;
+  border-radius: 10000px;
+}
+.profile-dashboard .box-list-menu-dashboard::-webkit-scrollbar-track-piece {
+  background-color: #282828;
+}
+.profile-dashboard .box-list-menu-dashboard .list-menu-dashboard {
+  /* background-color: darkgreen; */
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-bottom: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  /* font-weight: 600; */
+}
+.profile-dashboard .box-list-menu-dashboard .list-menu-dashboard:hover .text {
+  transform: translate(5px, 0px);
+  color: rgb(255, 255, 255);
+}
+.profile-dashboard .box-list-menu-dashboard .list-menu-dashboard:hover .icon i {
+  color: rgb(30, 255, 0);
+  text-shadow: 0px 0px 5px rgb(30, 255, 0);
+}
+.profile-dashboard .box-list-menu-dashboard .list-menu-dashboard:hover {
+  background-color: #1f1f1f;
+}
+.profile-dashboard .box-list-menu-dashboard .list-menu-dashboard .icon {
+  /* background-color: blue; */
+  padding-right: 20px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+.profile-dashboard .box-list-menu-dashboard .list-menu-dashboard .text {
+  font-size: 14.5px;
+  transition: 0.2s;
+}
+.profile-dashboard .dashboard-setting {
+  position: fixed;
+  bottom: 0;
+  padding: 0px 0px 10px 0px;
+  width: 240px;
+  background: #0f0f0f;
+  /* border-top: 1px solid #333; */
+  border-right: 1px solid #202020;
+  overflow: hidden;
+}
+.dashboard-setting .list-menu-dashboard {
+  display: flex;
+  align-items: center;
+  /* padding: 0px 10px 0px 20px; */
+  font-size: 14px;
+  color: #bbb;
+  margin: 0px 10px 0px 20px;
+}
+.dashboard-setting .list-menu-dashboard:hover {
+  background-color: #1f1f1f;
+}
+.dashboard-setting .list-menu-dashboard .icon {
+  padding-right: 20px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+.dashboard-setting .list-menu-dashboard .text {
+  font-size: 14.5px;
+}
+
+/* ------------------ Start Style popup upload video --------------------- */
+
+.manage-popup-upload-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  pointer-events: auto;
+  transition: all 0.3s ease;
+  height: 100%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(10px);
+}
+.manage-popup-upload-video .sub-popup-upload-video {
+  width: 63%;
+  height: 86%;
+  min-height: 370px;
+  border-radius: 25px;
+  background-color: #282828;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 15px 35px 20px 35px;
+  position: relative;
+  min-width: 900px;
+}
+.title-upload-video {
+  /* background-color: chartreuse; */
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  height: auto;
+  /* width: 500px; */
+  border-bottom: 1px solid #444;
+  padding-bottom: 10px;
+}
+.title-upload-video span {
+  float: left;
+  font-size: 18px;
+  /* font-weight: bold; */
+  color: #ffffffec;
+}
+.title-upload-video span:nth-child(2) {
+  float: left;
+}
+.title-upload-video span p {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  padding: 4px 11px 4px 11px;
+  border-radius: 50px;
+  background-color: #444;
+  width: max-content;
+  margin-top: 6px;
+}
+.title-upload-video span:nth-child(1) img {
+  padding: 0;
+  margin-left: 8px;
+  width: 20px;
+}
+.title-upload-video span img {
+  width: 20px;
+  height: auto;
+  filter: brightness(0) invert(1);
+  cursor: pointer;
+  margin-left: 20px;
+}
+.info-title-upload-video {
+  /* background-color: brown; */
+  margin-top: 20px;
+  overflow-y: scroll;
+  max-height: 400px;
+  height: auto;
+}
+.sub-info-title-upload-video .check-upload-video{
+  /* background-color: chartreuse; */
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 23px 30px 23px 30px;
+  display: block;
+  flex-shrink: 0;
+  align-items: center;
+  border-top: 1px solid #444;
+  overflow: hidden;
+  color: #ffffff;
+}
+.check-upload-video .sub-check-upload-video img {
+  width: 18px;
+  height: auto;
+  margin: 0px 3px 0px 3px;
+  filter: brightness(0) invert(1);
+  opacity: 90%;
+}
+.check-upload-video .sub-check-upload-video{
+  float: left;
+}
+.check-upload-video .sub-check-upload-video span {
+  font-size: 12px;
+  color: #ffffffec;
+  margin-left: 7px;
+}
+.check-upload-video .btn-next{
+  float: right;
+  /* background-color: chartreuse; */
+  font-size: 14.5px;
+  background-color: #00ff5594;
+  padding: 5px 15px 5px 15px;
+  margin: 0;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+
+
+
+.info-title-upload-video .sub-info {
+  /* background-color: chartreuse; */
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0px 0px 0px 0px;
+  overflow: hidden;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.info-title-upload-video .sub-info span {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.info-title-upload-video .sub-info span:nth-child(1) {
+  padding: 0;
+  margin: 0;
+  font-size: 23px;
+  font-weight: 600;
+  color: #ffffffec;
+  line-height: 1.7;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+.info-title-upload-video .sub-info span p {
+  margin: 0;
+  padding: 0;
+}
+.info-title-upload-video .sub-info span:nth-child(2) {
+  font-size: 13px;
+  margin: 0;
+  float: left;
+  line-height: 1.5;
+  padding: 4px 12px 3px 12px;
+  background-color: #444;
+  border-radius: 50px;
+}
+.info-title-upload-video .sub-info span:nth-child(2) p:nth-child(2) {
+  padding: 0;
+  float: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  max-width: 100%;
+  font-weight: 600; /* padding-left: 7px; */
+}
+
+.info-title-upload-video .sub-info-title-upload-video {
+  display: flex;
+  margin-top: 15px;
+}
+/* -------- info title left -------- */
+.sub-info-title-upload-video .info-input-title-left {
+  /* background-color: chartreuse; */
+  width: 65%;
+  margin-right: 20px;
+}
+.info-input-title-left .input-title {
+  /* background-color: rgb(21, 0, 255); */
+  display: flex;
+  float: left;
+  flex-direction: column;
+  width: 100%;
+  /* max-width: 100px; */
+  gap: 6px;
+  border: #ffffff70 2.1px solid;
+  overflow: hidden;
+  padding: 10px 10px 0px 10px;
+  border-radius: 10px;
+  max-width: 100%;
+  position: relative;
+  font-family: "Roboto";
+  margin-bottom: 20px;
+}
+
+.info-input-title-left .input-title:focus-within {
+  border: #ffffff 2.1px solid;
+}
+.input-title label {
+  margin: 0;
+  padding: 0;
+  /* background-color: brown; */
+  line-height: 1;
+  font-size: 11px;
+  color: #d1d0d0;
+}
+.input-title label img {
+  width: 12px;
+  height: auto;
+  filter: brightness(0) invert(1);
+  cursor: pointer;
+}
+.input-title textarea {
+  border: none;
+  outline: none;
+  padding: 0 0 20px 0; /* Padding ដើម */
+  background-color: transparent;
+  color: #ffffffe7;
+  border-radius: 5px;
+  margin: 0;
+  width: 100%;
+  margin: 0;
+  /* box-sizing: border-box; */
+  font-size: 15px;
+  font-family: "Roboto";
+  resize: none; /* ការពារការផ្លាស់ប្តូរទំហំដោយអ្នកប្រើ */
+  transition: padding 0.3s ease;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  /* white-space: nowrap; */
+}
+.input-title:nth-child(2) textarea{
+  padding: 0 0 80px 0; /* Padding ដើម */
+
+}
+.input-title:nth-child(2) textarea:not(:placeholder-shown) {
+    padding: 0 0 80px 0; /* Padding ដើម */
+}
+.input-title textarea:not(:placeholder-shown) {
+  padding: 0px 0px 10px 0px;
+}
+.input-title textarea::placeholder {
+  color: #ffffff76;
+  font-size: 14px;
+  white-space: wrap; /* Placeholder នៅជាបន្ទាត់តែមួយ */
+  overflow: hidden; /* ការពារការហ៊ុមព័ទ្ធ */
+  text-overflow: ellipsis; /* បន្ថែម ... បើ placeholder វែងពេក */
+  margin: 0;
+  padding: 0;
+}
+.input-title .number-of-characters {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  color: #ffffffb7;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.sub-info-title-upload-video .dis-video-upload {
+  background-color: darkorchid;
+  width: 35%;
+  float: right;
+}
+/* ------------------ End Style popup upload video --------------------- */
+
+/* Manage list video right */
+.manager-list-video-right {
+  background-color: brown;
+}
