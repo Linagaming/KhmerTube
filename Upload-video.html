@@ -1,0 +1,345 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Khmer Tube</title>
+
+    <link rel="icon" href="icon/KhmerTube Logo.png">
+
+    <!---------------------------------------------------------------- Icon --------------------------------------------------->
+    <link rel="stylesheet" href="icon/all.css">
+    <link rel="stylesheet" href="icon/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="icon/all.min.css">
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="css//upload-video-style.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="Jquery/Jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!---------------------------------------------------------------- Icon --------------------------------------------------->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="icon/all.min.css">
+    <link rel="stylesheet" href="css/Style.css">
+    <script src="Jquery/Jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/3efc0cc02a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Suwannaphum:wght@100;300;400;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="JavaScript/clck bar menu.js">
+</head>
+
+<body>
+
+    <div class="container-fluid manager-navigettion" id="barmenu">
+        <div class="row">
+            <div class="box-navigettion col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="logo-web col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                    <img src="icon/KhmerTube White.png">
+                    <p>CoolApp</p>
+                </div>
+                <div class="menu col-9 col-sm-9 col-md-10 col-lg-10 col-xl-10">
+                    <div class="search-box">
+                        <input type="text" placeholder="ស្វែងរក...">
+                        <i class="bi bi-search"></i>
+                    </div>
+                    <ul>
+                        <li><a href="home.html"><i class="ri-home-9-fill"></i></a></li>
+                        <li><a href="Upload video.html"><i class="ri-video-upload-fill"></i></a></li>
+                        <li onclick="openLogin()"><a><i class="ri-id-card-fill trigger-login"></i></a></li>
+                        <li onclick="nightModeDesktop()"><a><i class="ri-contrast-2-fill"></i></a></li>
+                        <li onclick="myOpenmenu()"><a><i class="bi bi-list"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!---------------------------------- Start Menu Bar For Phone ----------------------------------->
+    <div id="mymenuphone" class="container-fluid menubar-phone">
+        <div class="row">
+            <div class="box-menubar-phone">
+                <div class="logo">
+                    <a href="index.html"><img src="icon/KhmerTube.png"></a>
+                </div>
+                <div class="close-menu">
+                    <i onclick="myClosemenu()" class="fas fa-times"></i>
+                </div>
+                <ul id="textMode">
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>Login</li>
+                    </a>
+                    <a href="index.html">
+                        <li>Create Account</li>
+                    </a>
+                    <a href="https://t.me/lina_167" target="_blank">
+                        <li onclick="myClosemenu()">Contact for Support</li>
+                    </a>
+                    <a href="">
+                        <li>About KhmerTube</li>
+                    </a>
+                    <li onclick="myMode(); openAlert()">Mode <a><i class="bi bi-moon-stars-fill"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="myAlert" class="manager-alert">
+        <div class="alert-done">
+            <i class="bi bi-check-circle-fill"></i>
+            <p id="changtext">អ្នកប្តូរបានជោគជ័យ</p>
+        </div>
+    </div>
+
+
+
+
+
+    <!---------------------------------- End Start Menu Bar For Phone ----------------------------------->
+
+
+
+
+    <div id="login_form" class="manage-login-and-register col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="container manage-box-login-center">
+            <div class="row">
+                <div id="noneblock" class="box-login-and-register col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <p>Login</p>
+                    <div class="input-login ">
+                        <input type="email" placeholder="Email" name="textemail"><br>
+                        <input type="password" placeholder="Password"><br>
+                        <p><a href="#">Forgot Password?</a></p>
+                    </div>
+                    <div class="button-login" name="btnlogin">
+                        <span>Login</span>
+                    </div>
+                    <div class="text-dont-account">
+                        <p>Don't have an account? <a href="#">Sign up</a></p>
+                        <p></p>
+                    </div>
+                    <div class="box-login-with">
+                        <div class="login-with">
+                            <i class="bi bi-facebook"></i>
+                            <p>Login with Facebook</p>
+                        </div>
+                        <div class="login-with">
+                            <i><img src="icon/Google Logo.png"></i>
+                            <p>Login with Google</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid manage-upload-video">
+        <div class="row">
+            <div class="box-manage-upload-video col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="profile-dashboard col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                    <div class="box-profile">
+                        <div class="box-image-profile">
+                            <input type="file" id="profileImageInput" accept="image/*" style="display: none;" onchange="handleImageSelect(event)">
+                            <a href="https://www.youtube.com/@linagamming5669" onclick="MyChangeProfile()"><img
+                                    src="img/Lina gaming Official.jpg" alt="Profile Image"></a>
+                            <p>ប៉ុស្តិ៍​របស់​អ្នក</p>
+                            <span>Lina gaming Official</span>
+                        </div>
+                    </div>
+                    <div class="box-list-menu-dashboard">
+                        <div class="list-menu-dashboard">
+                            <div class="icon"><i class="bi bi-grid-1x2-fill"></i></div>
+                            <div class="text">ផ្ទាំងគ្រប់គ្រង</div>
+                        </div>
+                        <div class="list-menu-dashboard">
+                            <div class="icon"><i class="bi bi-collection-play-fill"></i></div>
+                            <div class="text">ខ្លឹមសារ</div>
+                        </div>
+                        <div class="list-menu-dashboard">
+                            <div class="icon"><i class="bi bi-graph-up"></i></div>
+                            <div class="text">ស្ថិតិវិភាគ</div>
+                        </div>
+                        <div class="list-menu-dashboard">
+                            <div class="icon"><i class="bi bi-people-fill"></i></div>
+                            <div class="text">សហគមន៍</div>
+                        </div>
+                        <div class="list-menu-dashboard">
+                            <div class="icon"><i class="bi bi-credit-card-2-front-fill"></i></div>
+                            <div class="text">អក្សរ​រត់​</div>
+                        </div>
+                        <div class="list-menu-dashboard">
+                            <div class="icon"><i class="bi bi-info-square-fill"></i></div>
+                            <div class="text">ការ​រក្សា​សិទ្ធិ​</div>
+                        </div>
+                        <div class="list-menu-dashboard">
+                            <div class="icon"><i class="bi bi-currency-exchange"></i></div>
+                            <div class="text">រកប្រាក់​</div>
+                        </div>
+                        <div class="list-menu-dashboard">
+                            <div class="icon"><i class="bi bi-stars"></i></div>
+                            <div class="text">ការប្តូរតាមបំណង​</div>
+                        </div>
+                        <div class="list-menu-dashboard">
+                            <div class="icon"><i class="bi bi-music-note-list"></i></div>
+                            <div class="text">បណ្ណាល័យ​​សំឡេង​</div>
+                        </div>
+
+                    </div>
+                    <div class="dashboard-setting box-list-menu-dashboard">
+                        <div class="list-menu-dashboard">
+                            <div class="icon"><i class="bi bi-gear-fill"></i></div>
+                            <div class="text">ការកំណត់</div>
+                        </div>
+                        <div class="list-menu-dashboard">
+                            <div class="icon"><i class="bi bi-chat-left-quote-fill"></i></div>
+                            <div class="text">ការកំណត់</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="manager-list-video-right col-12 col-md-10 mx-auto">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-------------------------------------------------- Start popup upload video -------------------------------------------->
+
+    <div class="manage-popup-upload-video">
+        <div class="sub-popup-upload-video">
+            <div class="title-upload-video">
+                <span>ការបង្ហោះវីដេអូ<img src="icon/upload-video.png"></span>
+                <span><img src="icon/feedback.png"><img src="icon/close.png" id="closeBtn"></span>
+            </div>
+            <div class="info-title-upload-video">
+                <div class="sub-info">
+                    <span>
+                        <p>ព័ត៌មានលម្អិត</p>
+                    </span>
+                    <span>
+                        <p>ចំណងជើងវីដេអូ៖
+                        <p id="titlePreview"></p>
+                        </p>
+                    </span>
+                </div>
+                <div class="sub-info-title-upload-video">
+                    <div class="check-upload-video">
+                        <div class="sub-check-upload-video">
+                            <img src="icon/upload-success.png">
+                            <img src="icon/hd.png">
+                            <img src="icon/checkmark.png">
+                            <span>បានបញ្ចប់ការពិនិត្យ។ រកមិន​ឃើញ​បញ្ហាទេ។</span>
+                        </div>
+                        <div class="btn-next"><span>បន្ទាប់</span></div>
+                    </div>
+                    <div class="info-input-title-left">
+                        <div class="input-title">
+                            <label for="title">ចំណងជើង (ត្រូវតែបំពេញ) <img src="icon/request.png"></label>
+                            <textarea id="inputtitle" name="inputtitle" placeholder="វាយបញ្ចូលចំណងជើងដែលពណ៌នាអំពិវីដេអូរបស់អ្នក និង (វាយបញ្ចូល @ ដើម្បីលើកឡើងអំពីប៉ុស្តិ៏)។"></textarea>
+                            <div class="number-of-characters" id="charCountTitle">0/100</div>
+                        </div>
+                        <div class="input-title">
+                            <label for="title">ការពណ៌នា <img src="icon/request.png"></label>
+                            <textarea id="inputdes" name="inputdes" placeholder="ប្រាប់អ្នកមើលវីដេអូរបស់អ្នក​ និង (វាយបញ្ចូល @ ដើម្បីលើកឡើងអំពីប៉ុស្តិ៏)។"></textarea>
+                            <div class="number-of-characters" id="charCountDes">0/5000</div>
+                        </div>
+                    </div>
+                    <div class="dis-video-upload">
+                        Display
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------------- End popup upload video -------------------------------------------->
+
+
+
+
+    <!-------------------------------------------------- Start Javascript -------------------------------------------->
+
+
+    <script src="JavaScript/scriptkhtube.js"></script>
+    <script src="JavaScript/open_login_from.js"></script>
+    <script>
+        const textareaTitle = document.getElementById('inputtitle');
+        const textareaDes = document.getElementById('inputdes');
+        const charCountTitle = document.getElementById("charCountTitle");
+        const charCountDes = document.getElementById("charCountDes");
+        const previewTitle = document.getElementById("titlePreview");
+
+        const maxTitleChars = 100;
+        const maxDesChars = 5000;
+
+        // Auto resize function
+        function autoResize(textarea) {
+            textarea.style.height = 'auto';
+            textarea.style.height = textarea.scrollHeight + 'px';
+        }
+
+        // Title handler
+        textareaTitle.addEventListener("input", () => {
+            let text = textareaTitle.value;
+            if (text.length > maxTitleChars) {
+                textareaTitle.value = text.substring(0, maxTitleChars);
+                text = textareaTitle.value;
+            }
+            charCountTitle.textContent = `${text.length}/${maxTitleChars}`;
+            charCountTitle.style.color = text.length >= maxTitleChars ? "red" : "";
+            previewTitle.textContent = text;
+            autoResize(textareaTitle);
+        });
+
+        // Description handler
+        textareaDes.addEventListener("input", () => {
+            let text = textareaDes.value;
+            if (text.length > maxDesChars) {
+                textareaDes.value = text.substring(0, maxDesChars);
+                text = textareaDes.value;
+            }
+            charCountDes.textContent = `${text.length}/${maxDesChars}`;
+            charCountDes.style.color = text.length >= maxDesChars ? "red" : "";
+            autoResize(textareaDes);
+        });
+
+        // Auto resize on page load
+        window.addEventListener('load', () => {
+            autoResize(textareaTitle);
+            autoResize(textareaDes);
+        });
+
+        const closeBtn = document.getElementById('closeBtn');
+        const popupDiv = document.querySelector('.manage-popup-upload-video');
+
+        closeBtn.addEventListener('click', () => {
+            popupDiv.style.display = 'none'; // បិទ div
+        });
+    </script>
+
+
+
+    <!------------------------------------------------ End Start Javascript ------------------------------------------>
+
+
+</body>
+
+</html>
